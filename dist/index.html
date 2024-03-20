@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
+    <title>Notes App</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Main container -->
+    <div class="container">
+        <!-- Content section -->
+        <div class="content">
+            <!-- Heading for the notes app -->
+            <h1>Notes Taking App</h1>
+            <!-- Input field for note title -->
+            <h3>Title of the note</h3>
+            <input type="text" name="" id="addTitle">
+            <!-- Dropdown for selecting note category -->
+            <div class="category">
+                <p>Select category:</p>
+                <select name="notes" id="noteCate">
+                    <option value="personal">Personal</option>
+                    <option value="work">Work</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+            <!-- Button to add a new note -->
+            <button id="addBtn">Add a note</button>
+            <!-- Search input field -->
+            <div id="Search"><input id="searchInput" type="text" placeholder="Search by title"></div>
+            <!-- Fieldset for selecting notes category -->
+            <fieldset id="category">
+                <legend>Search by Category</legend>
+                <!-- Radio buttons for selecting category -->
+                <input type="radio" id="default" name="category" value="default">
+                <label for="default">All</label>
+                <input type="radio" id="personal" name="category" value="personal">
+                <label for="personal">Personal</label>
+                <input type="radio" id="work" name="category" value="work">
+                <label for="work">Work</label>
+                <input type="radio" id="others" name="category" value="others">
+                <label for="others">Others</label>
+            </fieldset>
+            <!-- Heading for displaying notes -->
+            <h2 id="items">Your Notes</h2>
+            <!-- Table for displaying notes -->
+            <table>
+                <thead>
+                    <tr>
+                        <!-- Table headers -->
+                        <th>SNo</th>
+                        <th id="note1">Note Title</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <!-- Table body for displaying notes -->
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Modal for confirming note deletion -->
+    <div id="deletePopup" class="modal">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <!-- Prompt for confirmation of note deletion -->
+            <p>Are you sure you want to delete this note?</p>
+            <!-- Button to confirm deletion -->
+            <button id="confirmDeleteBtn">Delete</button>
+        </div>
+    </div>
+</body>
+<!-- JavaScript files for functionality -->
+<script src="./script.js"></script>
+<script src="./notes.js"></script>
+</html>

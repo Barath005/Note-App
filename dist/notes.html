@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Notes App</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Summernote CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+  <!-- Summernote JS -->
+  <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./notes.css">
+</head>
+<body>
+  <!-- Container for titles -->
+  <div id="titles-container">
+    <!-- Titles will be displayed here -->
+  </div>
+  <!-- Back button -->
+  <div class="back">
+    <button id="backBtn">Back</button>
+  </div>
+  <!-- Summernote editor -->
+  <div id="summernote"></div>
+  <!-- Indicator -->
+  <div id="indicator"></div>
+  <!-- Save button -->
+  <button id="saveNoteBtn">Save Note</button>
+
+  <script>
+    // Initialize Summernote editor
+    $(document).ready(function() {
+        $('#summernote').summernote({
+          placeholder: "Write your Note here",
+        });
+    });
+  </script>
+</body>
+<!-- External JavaScript file for notes functionality -->
+<script src="./notes.js" defer></script>
+</html>

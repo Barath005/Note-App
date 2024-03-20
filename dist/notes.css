@@ -1,0 +1,71 @@
+/* Resetting default margin, border, and box-sizing */
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* Styles for titles container */
+#titles-container > h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+}
+
+/* Styles for indicator */
+#indicator > p {
+    margin: 15px;
+    font-weight: bold;
+}
+
+/* Styles for save note button */
+#saveNoteBtn {
+    border: none;
+    margin: 0 10px;
+    background-color: rgba(32, 26, 156, 0.822);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid white;
+    transition: all 500ms;
+}
+
+/* Styles for back button container */
+.back {
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+    margin-right: 20px;
+}
+
+/* Styles for back button */
+#backBtn {
+    background-color: rgba(32, 26, 156, 0.822);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid white;
+    transition: all 500ms;
+}
+
+/* Hover and active styles for save note button */
+#saveNoteBtn:hover {
+    border: 2px solid white;
+    box-shadow: 2px 2px 5px 2px black;
+    background-color: rgba(11, 7, 94, 0.822);
+    cursor: pointer;
+}
+
+#saveNoteBtn:active {
+    background-color: rgba(11, 7, 94, 0.822);
+    box-shadow: 1px 1px 5px 1px black;
+}
